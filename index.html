@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove BG API</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Image Background Removal</h1>
+        <div>
+            <p>This tool was created in order to remove the background of images</p>
+        </div>
+        <div id="Example-image">
+            <image src="https://nohat.cc/assets/img/background-removal.png" height="400px" width="400px">
+        </div>
+    </div>
+    
+    <div id="main-body">
+        <form enctype="multipart/form-data" action="/process" method="post">
+            <input type="file" name="images" multiple accept=".jpg,.png" required>
+            <input type="submit" value="Remove Background">
+        </form>
+    </div>
+</body>
+</html>

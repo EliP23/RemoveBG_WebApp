@@ -1,0 +1,27 @@
+body{
+    background-color: #C4A484;
+}
+
+#header{
+    color: black;
+    text-align: center;
+    padding-bottom: 20px;
+    border: solid;
+}
+
+
+#main-body{
+    margin-top: 50px;
+    text-align: center;
+    border-bottom: 0cap;
+}
+
+#Example-image{
+    border-radius: 100px;
+    box-shadow: black;
+}
+
+#Example-image:hover{
+    transition: .4s;
+    transform: scale(1.1);
+}
